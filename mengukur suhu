@@ -1,0 +1,24 @@
+#include <iostream>
+#include <conio.h>
+int main()
+{
+int suhu,data,a;
+cout<<"Masukan banyak data : ";cin>>data;
+a=0;
+do{
+cout<<"Masukan suhu air (dalam derajat celcius) : ";
+cin>>suhu;
+	if (suhu<0)
+	cout<<"berbentuk es"<<endl;
+	else if (suhu<=25 && suhu!=0)
+	cout<<"air mulai akan membeku"<<endl;
+	else if (suhu>=50)
+	cout<<"air menguap"<<endl;
+	else
+	cout<<"air normal"<<endl;
+a++;
+}
+while (data>a);
+getch();
+return 0;
+}
