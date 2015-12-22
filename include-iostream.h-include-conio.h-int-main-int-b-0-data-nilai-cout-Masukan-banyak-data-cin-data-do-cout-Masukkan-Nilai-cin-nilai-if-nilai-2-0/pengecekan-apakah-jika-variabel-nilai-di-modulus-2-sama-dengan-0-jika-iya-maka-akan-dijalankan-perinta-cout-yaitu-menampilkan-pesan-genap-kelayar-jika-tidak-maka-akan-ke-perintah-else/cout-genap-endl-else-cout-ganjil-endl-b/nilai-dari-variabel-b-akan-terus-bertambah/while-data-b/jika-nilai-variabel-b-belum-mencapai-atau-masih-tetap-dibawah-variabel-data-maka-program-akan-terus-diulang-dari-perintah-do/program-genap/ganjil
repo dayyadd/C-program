@@ -1,0 +1,20 @@
+#include <iostream.h>
+#include <conio.h>
+int main()
+{
+int b=0,data,nilai;
+cout<<"Masukan banyak data  : ";cin>>data;
+do{
+cout<<"Masukkan Nilai : ";
+cin>>nilai;
+	if (nilai%2 == 0)/*pengecekan apakah jika variabel nilai di modulus 2 sama dengan 0, jika iya maka akan dijalankan perinta cout, yaitu menampilkan pesan “genap” kelayar, jika tidak maka akan ke perintah else*/
+	cout<<"genap"<<endl;
+	else
+	cout<<"ganjil"<<endl;
+b++; /*nilai dari variabel b akan terus bertambah*/
+}
+while (data>b); /*jika nilai variabel b belum mencapai atau masih tetap dibawah variabel data, maka program akan terus diulang dari perintah “do”*/
+getch();
+return 0;
+
+}
