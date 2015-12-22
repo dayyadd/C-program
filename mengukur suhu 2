@@ -1,0 +1,24 @@
+#include <iostream.h>
+#include <conio.h>
+int main()
+{
+	int suhu;
+	do
+	{		cout<<"Batas Kebekuan = 0 & batas mendidih = 100)"<<endl;
+		cout<<"Masukkan suhu (dalam derajat Celcius): ";cin>>suhu;
+
+		if (suhu!=0 && suhu<=30)
+		{cout<<"Air Mendingin"<<endl;}
+		else if (suhu<=0)
+		{cout<<"Air membeku"<<endl;}
+		else if (suhu!= 30 && suhu !=0 && suhu>=31)
+		{cout<<"Air Normal"<<endl;}
+		else
+		{cout<<"Air memanas"<<endl;}
+		
+		}
+		while (suhu  > 99 );
+
+		return 0;
+		}
+		
